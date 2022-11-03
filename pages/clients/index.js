@@ -3,8 +3,8 @@ import Link from 'next/link'
 
 function AllClients() {
   const client = [
-    { id: "val", name: "Valarie" },
-    { id: "emma", name: "Emmanuel" },
+    { id: "tech", name: "Technology" },
+    { id: "agric", name: "Agriculture" },
   ];
 
   return (
