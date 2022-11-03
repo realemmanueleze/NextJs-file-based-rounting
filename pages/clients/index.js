@@ -9,9 +9,17 @@ function AllClients() {
 
   return (
     <ul>
-      {client?.map(({ name, id }) => (
+      {/* {client?.map(({ name, id }) => (
         <li key={name}>
           <Link href={`/clients/${id}`}>{name}</Link>
+        </li>
+      ))} */}
+      {client?.map(({ name, id }) => (
+        <li key={name}>
+          <Link href={{
+            pathname: '/clients/[id]',
+            query: {id: id}
+          }}>{name}</Link>
         </li>
       ))}
     </ul>
